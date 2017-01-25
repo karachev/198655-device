@@ -12,6 +12,8 @@ body {
 footer {
 	background-color: #444444;
 	padding-top: 54px;
+	position: relative;
+	padding-bottom: 42px;
 	.row-1 {
 		.footer-logo {
 			float: left;
@@ -118,6 +120,60 @@ footer {
 		.phone {
 			margin-left: 187px;
 		}
+	}
+
+	.row-3 {
+		.footer-social {
+			display: inline-block;
+			margin-left: 488px;
+			margin-top: 43px;
+			ul {
+				li {
+					display: inline;
+					margin-right: 10px;
+					a {
+						font-size: 0;
+					}
+
+					.social-icon:after {
+						content: "";
+						display: inline-block;
+						width: 39px;
+						height: 38px;
+					}
+
+					.fb-icon:after {
+						background: url(../img/facebook.png);
+					}
+
+					.insta-icon:after {
+						background: url(../img/insta.png);
+					}
+
+					.tw-icon:after {
+						width: 38px;
+						background: url(../img/twitter.png);
+					}
+				}
+			}
+		}
+
+		.footer-copyright {
+			display: inline-block;
+			margin-left: 467px;
+		}
+	}
+
+	.row-3:after {
+		content: "";
+		position: absolute;
+		top: 237px;
+		left: 141px;
+		display: block;
+		width: 80px;
+		height: 7px;
+		background-color: #f7e184;
+
 	}
 }
 

@@ -9,6 +9,50 @@ body {
 	margin: 0 auto;
 }
 
+main {
+	.popular {
+		text-align: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				width: 160px;
+				margin-right: 36px;
+				vertical-align: top;
+
+				a {
+					text-decoration: none;
+					.popular-img {
+						height: 160px;
+						background-color: #ffe27f;
+						line-height: 160px;
+						img {
+							vertical-align: middle;
+
+						}
+					}
+					span {
+						display: block;
+						text-align: left;
+						width: 128px;
+						height: 36px;
+						color: #000000;
+						font-family: 'Gilroyextrabold';
+						font-size: 18px;
+						font-weight: 700;
+						margin-top: 32px;
+					}
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
 footer {
 	position: relative;
 

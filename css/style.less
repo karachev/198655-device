@@ -53,6 +53,7 @@ main {
 	}
 
 	.partners {
+		margin-bottom: 93px;
 		ul {
 			padding: 0px;
 			li {
@@ -98,6 +99,116 @@ main {
 					background: url(../img/logo-4-hover.png);
 				}
 			}
+		}
+	}
+
+	.about-us {
+		position: relative;
+		padding-bottom: 91px;
+		h2 {
+			color: #000000;
+			font-family: 'Gilroyextrabold';
+			font-size: 47px;
+			font-weight: 700;
+			margin-bottom: 0;
+			margin-top: 48px;
+		}
+
+		p {
+			color: #464646;
+			font-family: 'OpenSans';
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 30px;
+			margin-top: 37px;
+		}
+
+		.button-main {
+			position: relative;
+		}
+
+		a {
+			color: #000000;
+			font-family: 'Gilroyextrabold';
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 47px;
+			display: inline-block;
+			margin-left: 24px;
+			letter-spacing: 3.6px;
+			text-decoration: none;
+		}
+
+		a:before {
+			content: "";
+			display: block;
+			height: 8px;
+			background-color: #f0c52e;
+			position: absolute;
+			top: 54px;
+			left: 0px;
+			width: 260px;
+			z-index: -1;
+		}
+
+		.info {
+			float: left;
+			width: 495px;
+			margin-left: 18px;
+
+			.about-p_second {
+				margin-top: 31px;
+			}
+
+			ul {
+				margin-top: 66px;
+				padding-left: 21px;
+				li {
+					padding-left: 13px;
+					span {
+						color: #000000;
+						font-family: 'Gilroyextrabold';
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+
+		.contact {
+			float: right;
+			width: 560px;
+			margin-right: 21px;
+
+			img {
+				margin-top: 26px;
+				margin-bottom: 25px;
+			}
+
+			 .about-a_second {
+				margin-left: 41px;
+			 }
+		}
+
+		.info:after,
+		.contact:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0px;
+			width: 80px;
+			height: 7px;
+			background-color: #000000;
+		}
+
+		.info:after {
+			left: 20px;
+		}
+
+		.contact:after {
+			right: 500px;
 		}
 	}
 }

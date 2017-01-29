@@ -27,11 +27,12 @@ main {
 						height: 160px;
 						background-color: #ffe27f;
 						line-height: 160px;
+
 						img {
 							vertical-align: middle;
-
 						}
 					}
+
 					span {
 						display: block;
 						text-align: left;
@@ -42,6 +43,26 @@ main {
 						font-size: 18px;
 						font-weight: 700;
 						margin-top: 32px;
+					}
+				}
+
+				a:hover {
+					.popular-img {
+						background-color: #ffc600;
+					}
+				}
+
+				a:active { /*Не уверен что правильно работает*/
+					.popular-img {
+						background-color: #f0c52e;
+						img {
+							opacity: 0.3;
+							background-color: #f0c52e;
+						}
+					}
+
+					span {
+						opacity: 0.3;
 					}
 				}
 			}
@@ -151,6 +172,17 @@ main {
 			width: 260px;
 			z-index: -1;
 		}
+
+		a:hover:before,
+		a:active:before {
+			top: 39px;
+			height: 40px;
+		}
+
+		a:active {
+			opacity: 0.3;
+		}
+
 
 		.info {
 			float: left;

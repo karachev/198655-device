@@ -1,0 +1,654 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	
+	.header-logo {
+		left: 77px;
+		position: relative;
+		z-index: 1;
+		top: 10px;
+
+		a {
+			color: #000000;
+			font-family: 'Gilroyextrabold';
+			font-size: 48px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #464646;
+		}
+
+		a:active {
+			color: #666666;
+		}
+	}
+
+	.header-row {
+		width: 1160px;
+		background-color: #ffe27f;
+
+		margin: 0px auto;
+		height: 299px;
+		margin-top: -19px;
+		padding-top: 39px;
+	}
+
+	.header-left {
+		float: left;
+
+		form {
+			margin-left: 63px;
+			position: relative;
+			input {
+				opacity: 0.3;
+				color: #000000;
+				font-family: 'OpenSans';
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 36px;
+				background-color: inherit;
+				border: none;
+				cursor: pointer;
+				outline: none;
+				padding-left: 35px;
+				padding-top: -8px;
+			}
+
+			label:before {
+				content: "";
+				width: 16px;
+				height: 16px;
+				background: url(../img/search.png) no-repeat;
+				position: absolute;
+				display: inline-block;
+				top: 12px;
+				left: 0px;
+			}
+		}
+
+		.main-navigation-left {
+			margin-top: 36px;
+			margin-left: 60px;
+
+			.navigation_a-top {
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 3.5px;
+			}
+
+			.navigation_ul-top {
+				display: none;
+			}
+
+			.navigation_a-top:hover {
+				.navigation_ul-top {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.header-right {
+		float: right;
+
+		.user-block {
+			ul {
+				margin-top: 2px;
+				margin-right: 58px;
+				li {
+					display: inline-block;
+					position: relative;
+					margin-left: 59px;
+					a {
+						color: #000000;
+						font-family: 'OpenSans';
+						font-size: 15px;
+						font-weight: 300;
+						line-height: 36px;
+						text-decoration: none;
+					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 0.3;
+					}
+
+					.user-icon:after {
+						content: "";
+						position: absolute;
+
+						display: block;
+					}
+
+					.login-icon:after {
+						top: 12px;
+						left: -26px;
+						width: 13px;
+						height: 12px;
+						background: url(../img/user.png);
+					}
+
+					.compare-icon:after {
+						top: 14px;
+						left: -19px;
+						width: 10px;
+						height: 10px;
+						background: url(../img/compare.png);
+					}
+
+					.cart-icon:after {
+						top: 12px;
+						left: -22px;
+						width: 12px;
+						height: 12px;
+						background:url(../img/cart.png);
+					}
+				}
+
+				li:first-child {
+					margin-right: 172px;
+				}
+			}
+		}
+	}
+}
+
+main {
+	.popular {
+		text-align: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				width: 160px;
+				margin-right: 36px;
+				vertical-align: top;
+
+				a {
+					text-decoration: none;
+					.popular-img {
+						height: 160px;
+						background-color: #ffe27f;
+						line-height: 160px;
+
+						img {
+							vertical-align: middle;
+						}
+					}
+
+					span {
+						display: block;
+						text-align: left;
+						width: 128px;
+						height: 36px;
+						color: #000000;
+						font-family: 'Gilroyextrabold';
+						font-size: 18px;
+						font-weight: 700;
+						margin-top: 32px;
+					}
+				}
+
+				a:hover {
+					.popular-img {
+						background-color: #ffc600;
+					}
+				}
+
+				a:active { /*Не уверен что правильно работает*/
+					.popular-img {
+						background-color: #f0c52e;
+						img {
+							opacity: 0.3;
+							background-color: #f0c52e;
+						}
+					}
+
+					span {
+						opacity: 0.3;
+					}
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.partners {
+		margin-bottom: 93px;
+		ul {
+			padding: 0px;
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				margin-right: 16px;
+				a {
+					display: block;
+					font-size: 0px;
+					width: 260px;
+					min-height: 100px;
+				}
+
+				.partners-dji {
+					background: url(../img/logo-1.png);
+				}
+
+				.partners-gadgets {
+					background: url(../img/logo-2.png);
+				}
+
+				.partners-gopro {
+					background: url(../img/logo-3.png);
+				}
+
+				.partners-vive {
+					background: url(../img/logo-4.png);
+				}
+
+				.partners-dji:hover {
+					background: url(../img/logo-1-hover.png);
+				}
+
+				.partners-gadgets:hover {
+					background: url(../img/logo-2-hover.png);
+				}
+
+				.partners-gopro:hover {
+					background: url(../img/logo-3-hover.png);
+				}
+
+				.partners-vive:hover {
+					background: url(../img/logo-4-hover.png);
+				}
+			}
+		}
+	}
+
+	.about-us {
+		position: relative;
+		padding-bottom: 91px;
+		h2 {
+			color: #000000;
+			font-family: 'Gilroyextrabold';
+			font-size: 47px;
+			font-weight: 700;
+			margin-bottom: 0;
+			margin-top: 48px;
+		}
+
+		p {
+			color: #464646;
+			font-family: 'OpenSans';
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 30px;
+			margin-top: 37px;
+		}
+
+		.button-main {
+			position: relative;
+		}
+
+		a {
+			color: #000000;
+			font-family: 'Gilroyextrabold';
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 47px;
+			display: inline-block;
+			margin-left: 24px;
+			letter-spacing: 3.6px;
+			text-decoration: none;
+		}
+
+		a:before {
+			content: "";
+			display: block;
+			height: 8px;
+			background-color: #f0c52e;
+			position: absolute;
+			top: 54px;
+			left: 0px;
+			width: 260px;
+			z-index: -1;
+		}
+
+		a:hover:before,
+		a:active:before {
+			top: 39px;
+			height: 40px;
+		}
+
+		a:active {
+			opacity: 0.3;
+		}
+
+
+		.info {
+			float: left;
+			width: 495px;
+			margin-left: 18px;
+
+			.about-p_second {
+				margin-top: 31px;
+			}
+
+			ul {
+				margin-top: 66px;
+				padding-left: 21px;
+				li {
+					padding-left: 13px;
+					span {
+						color: #000000;
+						font-family: 'Gilroyextrabold';
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+
+		.contact {
+			float: right;
+			width: 560px;
+			margin-right: 21px;
+
+			img {
+				margin-top: 26px;
+				margin-bottom: 25px;
+			}
+
+			 .about-a_second {
+				margin-left: 41px;
+			 }
+		}
+
+		.info:after,
+		.contact:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0px;
+			width: 80px;
+			height: 7px;
+			background-color: #000000;
+		}
+
+		.info:after {
+			left: 20px;
+		}
+
+		.contact:after {
+			right: 500px;
+		}
+	}
+}
+
+footer {
+	position: relative;
+
+	background-color: #444444;
+	padding-top: 54px;
+	padding-bottom: 42px;
+	.row-1 {
+		.footer-logo {
+			float: left;
+			margin-left: 18px;
+			a {
+				color: #f7e184;
+				font-family: 'Gilroyextrabold';
+				font-size: 48px;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #f0c52e;
+			}
+
+			a:active {
+				opacity: 0.3;
+				color: #f0c52e;
+			}
+		}
+
+		.footer-user-block {
+			position: relative;
+
+			float: right;
+			margin-top: 6px;
+			margin-right: 19px;
+			a {
+				padding-left: 57px;
+
+				color: #ffffff;
+				font-family: 'OpenSans';
+				font-weight: 300;
+				line-height: 36px;
+				text-decoration: none;
+				font-size: 15px;
+				opacity: 0.7;
+			}
+
+			a:hover {
+				opacity: 1;
+			}
+
+			a:active {
+				opacity: 0.3;
+			}
+
+			.user-icon:after {
+				content: "";
+				position: absolute;
+
+				display: block;
+			}
+
+			.login-icon:after {
+				top: 12px;
+				left: 30px;
+				width: 13px;
+				height: 12px;
+				background: url(../img/user-yellow.png);
+			}
+
+			.compare-icon:after {
+				top: 14px;
+				left: 143px;
+				width: 10px;
+				height: 10px;
+				background: url(../img/compare-yellow.png);
+			}
+
+			.cart-icon:after {
+				top: 12px;
+				left: 273px;
+				width: 12px;
+				height: 12px;
+				background:url(../img/cart-yellow.png);
+			}
+		}
+	}
+
+	.row-2 {
+		margin-top: 20px;
+		span {
+			color: #ffffff;
+			font-family: 'OpenSans';
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 30px;
+		}
+
+		.address {
+			margin-left: 20px;
+		}
+
+		.footer-navigation {
+			display: inline-block;
+			margin-left: 112px;
+			ul {
+				margin-bottom: 0;
+				margin-top: 0;
+				li {
+					display: inline;
+					margin-right: 33px;
+					a {
+						color: #ffffff;
+						font-family: 'Gilroyextrabold';
+						font-size: 18px;
+						font-weight: 700;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 3.3px;
+					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 0.3;
+					}
+				}
+
+				li:last-child {
+					margin-right: 0;
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.phone {
+			margin-left: 187px;
+		}
+	}
+
+	.row-3 {
+		.footer-social {
+			display: inline-block;
+			margin-top: 43px;
+			margin-left: 488px;
+			ul {
+				li {
+					display: inline;
+					margin-right: 10px;
+					a {
+						font-size: 0;
+						opacity: 0.3;
+					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 0.1;
+					}
+
+					.social-icon:after {
+						content: "";
+
+						display: inline-block;
+						width: 39px;
+						height: 38px;
+						
+					}
+
+
+					.fb-icon:after {
+						background: url(../img/facebook.png);
+					}
+
+					.insta-icon:after {
+						background: url(../img/insta.png);
+					}
+
+					.tw-icon:after {
+						width: 38px;
+						background: url(../img/twitter.png);
+					}
+				}
+			}
+		}
+
+		.footer-copyright {
+			display: inline-block;
+			margin-left: 467px;
+			
+			a {
+				opacity: 0.7;
+			}
+
+			a:hover {
+				opacity: 1;
+			}
+
+			a:active {
+				opacity: 0.3;
+			}
+		}
+	}
+
+	.row-3:after {
+		content: "";
+		position: absolute;
+		top: 237px;
+		left: 141px;
+
+		display: block;
+		width: 80px;
+		height: 7px;
+
+		background-color: #f7e184;
+
+	}
+}
+
+.clearfix:after {
+	content: "";
+
+	display: table;
+
+	clear: both;
+}
+
+@font-face {
+	font-family: 'Gilroyextrabold';
+
+ 	src: local('Gilroyextrabold'),
+     		url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    		url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: local('OpenSans'),
+     		url('../fonts/opensans.woff2') format('woff2'),
+    		url('../fonts/opensanslight.woff') format('woff');
+}

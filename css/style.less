@@ -44,6 +44,10 @@ header {
 		padding-top: 39px;
 	}
 
+	.row-catalog {
+		height: 186px;
+	}
+
 	.header-left {
 		float: left;
 
@@ -507,6 +511,117 @@ main {
 			right: 500px;
 		}
 	}
+
+	/*catalog.html*/
+	.main-title-catalog {
+		color: #000000;
+		font-family: 'Gilroyextrabold';
+		font-size: 47px;
+		font-weight: 700;
+		margin-top: -57px;
+		margin-left: 80px;
+		margin-bottom: 0;
+	}
+
+	.catalog-breadcrumbs {
+		margin-left: 41px;
+		margin-top: -3px;
+		ul {
+			position: relative;
+
+			li {
+				display: inline-block;
+				margin-right: 31px;
+
+				a,
+				span {
+					opacity: 0.3;
+					color: #000000;
+					font-family: 'OpenSans';
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 36px;
+					text-decoration: none;
+				}
+			}
+
+			li:first-child:after {
+				content: "";
+				display: block;
+				
+				position: absolute;
+				top: 15px;
+				left: 106px;
+
+				width: 4px;
+				height: 7px;
+
+				background: url(../img/nav-arrow.png) no-repeat;
+			}
+
+			li:nth-child(2):after {
+				content: "";
+				display: block;
+				
+				position: absolute;
+				top: 15px;
+				left: 146px;
+
+				width: 4px;
+				height: 7px;
+
+				background: url(../img/nav-arrow.png) no-repeat;
+			}
+		}
+	}
+
+	.catalog-main-left {
+		float: left;
+
+		h2 {
+			color: #000000;
+			font-family: Gilroy;
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		form {
+			.price {
+
+			}
+
+			.color {
+				label {
+
+				}
+
+				input[type="checkbox"] {
+
+				}
+			}
+
+			.bluetooth {
+				label {
+
+				}
+
+				input[type="radio"] {
+					
+				}
+
+			}
+
+			button {
+
+			}
+		}
+	}
+
+	.catalog-main-right {
+		float: right;
+	}
+
 }
 
 footer {

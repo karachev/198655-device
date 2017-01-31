@@ -39,7 +39,7 @@ header {
 		background-color: #ffe27f;
 
 		margin: 0px auto;
-		height: 299px;
+		height: 260px;
 		margin-top: -19px;
 		padding-top: 39px;
 	}
@@ -123,10 +123,6 @@ header {
 				transform: rotate(90deg);
 			}
 
-			.navigation_ul-top {
-				display: none;
-			}
-
 			.navigation_a-top:hover {
 				.navigation_ul-top {
 					display: inline-block;
@@ -137,11 +133,15 @@ header {
 
 	.header-right {
 		float: right;
+		width: 600px;
 
 		.user-block {
+			/*float: right;*/
 			ul {
-				margin-top: 2px;
-				margin-right: 58px;
+				margin-right: 37px;
+				padding: 0;
+				margin-top: 0px;
+				margin-left: 66px;
 				li {
 					display: inline-block;
 					position: relative;
@@ -196,18 +196,20 @@ header {
 				}
 
 				li:first-child {
-					margin-right: 172px;
+					margin-right: 173px;
+					margin-left: 0;
 				}
 			}
 		}
 
 		nav {
-			margin-top: 36px;
-			margin-left: 32px;
+			margin-top: 38px;
+			margin-left: 40px;
 			ul {
+				padding: 0;
 				li {
 					display: inline-block;
-					margin-right: 29px;
+					margin-right: 28px;;
 					a {
 						color: #000000;
 						font-family: 'Gilroyextrabold';
@@ -228,14 +230,50 @@ header {
 				}
 
 				li:last-child {
-					margin-left: 73px;
 				}
+			}
+		}
+	}
+
+	.header-bottom {
+		margin-top: 118px;
+		clear: both;
+		.navigation_ul-top {
+			padding: 0;
+			margin-left: 60px;
+			.navigation_li-top{
+				display: inline-block;
+				vertical-align: top;
+				list-style-type: none;
+				margin-right: 50px;
+
+				.navigation_ul-bottom{
+					padding: 0;
+					.navigation_li-bottom{
+						list-style-type: none;
+						
+						.navigation_a-bottom{
+							color: #000000;
+							font-family: 'OpenSans';
+							font-size: 15px;
+							font-weight: 300;
+							line-height: 36px;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+
+			.navigation_li-top:last-child {
+				margin-left: 12px;
+				margin-right: 0px;
 			}
 		}
 	}
 }
 
 main {
+	margin-top: 50px;
 	.popular {
 		text-align: center;
 		ul {
@@ -692,6 +730,11 @@ footer {
 		background-color: #f7e184;
 
 	}
+}
+
+
+header .header-right nav ul li:last-child {
+	margin-left: 75px;
 }
 
 .clearfix:after {

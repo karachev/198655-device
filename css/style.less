@@ -80,6 +80,7 @@ header {
 		.main-navigation-left {
 			margin-top: 36px;
 			margin-left: 60px;
+			position: relative;
 
 			.navigation_a-top {
 				color: #000000;
@@ -89,6 +90,37 @@ header {
 				text-transform: uppercase;
 				text-decoration: none;
 				letter-spacing: 3.5px;
+			}
+
+			.navigation_a-top:hover {
+				opacity: 0.6;
+			}
+
+			.navigation_a-top:active {
+				opacity: 0.3;
+			}
+
+			.navigation_a-top:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 230px;
+				width: 16px;
+				height: 2px;
+				background-color: #bda862;
+			}
+
+			.navigation_a-top:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 230px;
+				width: 16px;
+				height: 2px;
+				background-color: #bda862;
+				transform: rotate(90deg);
 			}
 
 			.navigation_ul-top {
@@ -165,6 +197,38 @@ header {
 
 				li:first-child {
 					margin-right: 172px;
+				}
+			}
+		}
+
+		nav {
+			margin-top: 36px;
+			margin-left: 32px;
+			ul {
+				li {
+					display: inline-block;
+					margin-right: 29px;
+					a {
+						color: #000000;
+						font-family: 'Gilroyextrabold';
+						font-size: 18px;
+						font-weight: 700;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 3.8px;
+					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 0.3;
+					}
+				}
+
+				li:last-child {
+					margin-left: 73px;
 				}
 			}
 		}

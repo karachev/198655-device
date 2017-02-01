@@ -521,6 +521,7 @@ main {
 		margin-top: -57px;
 		margin-left: 80px;
 		margin-bottom: 0;
+		letter-spacing: 0.5px;
 	}
 
 	.catalog-breadcrumbs {
@@ -565,7 +566,7 @@ main {
 				
 				position: absolute;
 				top: 15px;
-				left: 146px;
+				left: 258px;
 
 				width: 4px;
 				height: 7px;
@@ -577,31 +578,180 @@ main {
 
 	.catalog-main-left {
 		float: left;
+		width: 468px;
+		min-height: 1283px;
+		margin-left: 232px;
+		margin-top: 24px;
+		background-color: #efefef;
 
 		h2 {
+			display: inline-block;
+			background-color: #dcdcdc;
 			color: #000000;
-			font-family: Gilroy;
+			font-family: 'Gilroyextrabold';
 			font-size: 16px;
 			font-weight: 700;
 			text-transform: uppercase;
+			padding: 25px 178px 26px 201px;
+			letter-spacing: 3.4px;
+			margin-bottom: 0;
+			margin-top: 0;
 		}
 
 		form {
+			margin-top: 82px;
+			margin-left: 199px;
+
+			h3 {
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				letter-spacing: 0.3px;
+				margin-bottom: 0;
+			}
+
+			h3:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: -13px;
+				left: 0px;
+				width: 201px;
+				height: 2px;
+				background-color: #000000;
+			}
+
 			.price {
+				position: relative;
 
 			}
 
 			.color {
-				label {
+				position: relative;
 
+				margin-top: 118px;
+				
+
+				label {
+					display: block;
+					margin-left: 39px;
+
+					color: #000000;
+					font-family: 'OpenSans';
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 40px;
+
+					cursor: pointer;
+				}
+
+				label:first-of-type {
+					margin-top: 19px;
+				}
+
+				label:before {
+					content: "";
+					display: block;
+					position: absolute;
+					
+					left: 0px;
+					width: 23px;
+					height: 23px;
+					background-color: #dbdbdb;
+				}
+
+				label:first-of-type:before {
+					top: 49px;
+
+						input[type="checkbox"]:checked + span:before  {
+						content: "";
+						display: block;
+						position: absolute;
+
+						top: 57px;
+						left: 5px;
+						z-index: 1;
+						
+						width: 12px;
+						height: 7px;
+						background: url(../img/tick.png);
+					}
+				}
+
+				label:nth-of-type(2):before {
+					top: 89px;
+				}
+
+				label:nth-of-type(3):before {
+					top: 130px;
+				}
+
+				label:nth-of-type(4):before {
+					top: 168px;
+				}
+
+				label:nth-of-type(5):before {
+					top: 208px;
 				}
 
 				input[type="checkbox"] {
-
+					display: none;
 				}
+
+				input[type="checkbox"]:checked + span:before  {
+					content: "";
+					display: block;
+					position: absolute;
+
+					top: 57px;
+					left: 5px;
+					z-index: 1;
+					
+					width: 12px;
+					height: 7px;
+					background: url(../img/tick.png);
+				}
+
+				label input[type="checkbox"]:checked + span:before  {
+					content: "";
+					display: block;
+					position: absolute;
+
+					left: 5px;
+					z-index: 1;
+					
+					width: 12px;
+					height: 7px;
+					background: url(../img/tick.png);
+				}
+
+				label:first-of-type input[type="checkbox"]:checked + span:before  {
+					top: 57px;
+				}
+
+				label:nth-of-type(2) input[type="checkbox"]:checked + span:before  {
+					top: 97px;
+				}
+
+				label:nth-of-type(3) input[type="checkbox"]:checked + span:before  {
+					top: 138px;
+				}
+
+				label:nth-of-type(4) input[type="checkbox"]:checked + span:before  {
+					top: 176px;
+				}
+
+				label:nth-of-type(5) input[type="checkbox"]:checked + span:before  {
+					top: 216px;
+				}
+
+
 			}
 
 			.bluetooth {
+				position: relative;
+
 				label {
 
 				}
@@ -794,9 +944,7 @@ footer {
 						display: inline-block;
 						width: 39px;
 						height: 38px;
-						
 					}
-
 
 					.fb-icon:after {
 						background: url(../img/facebook.png);
@@ -846,7 +994,6 @@ footer {
 
 	}
 }
-
 
 header .header-right nav ul li:last-child {
 	margin-left: 75px;

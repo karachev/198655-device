@@ -601,6 +601,7 @@ main {
 		form {
 			margin-top: 82px;
 			margin-left: 199px;
+			position: relative;
 
 			h3 {
 				color: #000000;
@@ -751,9 +752,10 @@ main {
 
 			.bluetooth {
 				position: relative;
+				margin-top: 44px;
 
 				label {
-
+					display: block;
 				}
 
 				input[type="radio"] {
@@ -763,13 +765,106 @@ main {
 			}
 
 			button {
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				background-color: inherit;
+				border: none;
+				margin-top: 98px;
+				margin-left: 35px;
+				letter-spacing: 3.4px;;
+			}
 
+			button:before {
+				content: "";
+				display: block;
+				height: 8px;
+				background-color: #f0c52e;
+				position: absolute;
+				top: 593px;
+				left: 0px;
+				width: 200px;
 			}
 		}
 	}
 
 	.catalog-main-right {
-		float: right;
+		float: left;
+		width: 973px;
+		background-color: #ebebeb;
+		margin-top: 24px;
+		.sort {
+			float: left;
+			margin-top: 12px;
+			margin-left: 73px;
+			padding-bottom: 10px;
+
+			h2 {
+				display: inline-block;
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 16px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 3.5px;
+			}
+
+			ul {
+				display: inline-block;
+				margin-left: 47px;
+				padding-left: 0;
+				margin-top: 0px;
+				li {
+					display: inline-block;
+					margin-right: 26px;
+					a {
+						color: #000000;
+						font-family: 'OpenSans';
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 18px;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		.sort-by {
+			float: right;
+			margin-top: 25px;
+			margin-right: 141px;
+
+			.icon-sort-by {
+				display: inline-block;
+				width: 17px;
+				height: 9px;
+				opacity: 0.2;
+			}
+
+			.icon-sort-by:hover {
+				opacity: 0.6;
+			}
+
+			.icon-sort-by:active {
+				opacity: 1;
+			}
+
+			.sort-by-up {
+				background: url(../img/sort.png);
+				margin-right: 22px;
+				transform: rotate(180deg);
+			}
+
+			.sort-by-down {
+				background: url(../img/sort.png);
+			}
+		}
+	}
+
+	.result {
+		clear: both;
 	}
 
 }
@@ -991,7 +1086,6 @@ footer {
 		height: 7px;
 
 		background-color: #f7e184;
-
 	}
 }
 

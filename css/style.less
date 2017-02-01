@@ -826,6 +826,15 @@ main {
 						font-weight: 400;
 						line-height: 18px;
 						text-decoration: none;
+						opacity: 0.3;
+					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 1;
 					}
 				}
 			}
@@ -864,6 +873,48 @@ main {
 	}
 
 	.result {
+		float: right;
+		width: 760px;
+		margin-right: 371px;
+
+		.result-row-1 {
+			margin-top: 69px;
+		}
+
+		.result-item {
+			float: left;
+			img {
+
+			}
+
+			h3 {
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				margin-top: 29px;
+				letter-spacing: 0.2px;
+			}
+
+			.price {
+				color: #464646;
+				font-family: 'Gilroyextralight';
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+
+		.result-item:nth-child(add) {
+			float: left;
+		}
+
+		.result-item:nth-child(even) {
+			float: right;
+		}
+
+	}
+
+	.paginator {
 		clear: both;
 	}
 
@@ -1107,6 +1158,14 @@ header .header-right nav ul li:last-child {
  	src: local('Gilroyextrabold'),
      		url('../fonts/gilroyextrabold.woff2') format('woff2'),
     		url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Gilroyextralight';
+
+ 	src: local('Gilroyextralight'),
+     		url('../fonts/gilroylight.woff2') format('woff2'),
+    		url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {

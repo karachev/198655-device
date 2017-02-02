@@ -957,7 +957,75 @@ main {
 	}
 
 	.paginator {
-		clear: both;
+		float: left;background-color:#ebebeb;
+		margin-top: 20px;
+		margin-left: 73px;
+
+		ul {
+			padding: 0px;
+			margin: 0;
+			li {
+				display: inline-block;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				margin-right: 21px;
+				
+				a {
+					color: #000000;
+					font-family: 'Gilroyextrabold';
+					font-size: 16px;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 3.2px;
+					opacity: 0.3;
+				}
+
+				a:hover {
+					opacity: 0.6;
+				}
+
+				a:active,
+				.a-active {
+					opacity: 1;
+				}
+			}
+
+			li:first-of-type {
+				margin-right: 206px;
+				padding-left: 29px;
+				padding-right: 29px;
+
+				a {
+					opacity: 1;
+				}
+			}
+
+			li:last-of-type {
+				margin-left: 180px;
+				margin-right: 0px;
+				padding-left: 29px;
+				padding-right: 29px;
+
+				a {
+					opacity: 1;
+				}
+			}
+
+			li:first-of-type:hover,
+			li:last-of-type:hover,
+			li:first-of-type:active,
+			li:last-of-type:active {
+				background-color: #d8d8d8;
+			}
+
+			li:first-of-type:active,
+			li:last-of-type:active {
+				a {
+					opacity: 0.3;
+				}
+			}
+		}
 	}
 
 }

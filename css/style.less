@@ -881,26 +881,68 @@ main {
 			margin-top: 69px;
 		}
 
+		.result-row-2 {
+			margin-top: 32px;
+		}
+
 		.result-item {
 			float: left;
+			width: 360px;
+			position: relative;
+
 			img {
 
 			}
 
 			h3 {
+				display: block;
+				float: left;
 				color: #000000;
 				font-family: 'Gilroyextrabold';
 				font-size: 18px;
 				font-weight: 700;
 				margin-top: 29px;
 				letter-spacing: 0.2px;
+				display: inline-block;
 			}
 
 			.price {
+				display: block;
+				float: right;
 				color: #464646;
 				font-family: 'Gilroyextralight';
 				font-size: 16px;
 				font-weight: 300;
+				margin-top: 31px;
+				margin-right: 2px;
+			}
+
+			.new {
+				position: absolute;
+				top: 50px;
+				right: 40px;
+				span {
+					opacity: 0.2;
+					color: #000000;
+					font-family: 'Gilroyextrabold';
+					font-size: 14px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+
+			.new:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: -21px;
+				right: -13px;
+				width: 56px;
+				height: 56px;
+				border: 2px solid #000000;
+				background-color: rgba(205, 57, 68, 0);
+				opacity: 0.1;
+				border-radius: 50%;
 			}
 		}
 

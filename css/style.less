@@ -543,6 +543,15 @@ main {
 					font-weight: 300;
 					line-height: 36px;
 					text-decoration: none;
+					cursor: pointer;
+				}
+
+				a:hover {
+					opacity: 0.6;
+				}
+
+				a:active {
+					opacity: 1;
 				}
 			}
 
@@ -662,6 +671,12 @@ main {
 						  background: inherit;
 						}
 
+						.toggle:active {
+							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+							border: 3px solid #ffffff;
+							background-color: #7eae29;
+						}
+
 						.toggle-min {
   						left: -1px;
 						}
@@ -699,12 +714,11 @@ main {
 							font-weight: 300;
 							line-height: 22px;
 
-
 						  width: 71px;
-
 
 						  background-color: inherit;
 							border: none;
+							outline: none;
 						}
 					}
 				}
@@ -740,6 +754,14 @@ main {
 					width: 23px;
 					height: 23px;
 					background-color: #dbdbdb;
+				}
+
+				label:hover:before {
+					background-color: #cecece;
+				}
+
+				label:active:before {
+					background-color: #c4c4c4;
 				}
 
 				label:first-of-type:before {
@@ -826,8 +848,6 @@ main {
 				label:nth-of-type(5) input[type="checkbox"]:checked + span:before  {
 					top: 216px;
 				}
-
-
 			}
 
 			.bluetooth {

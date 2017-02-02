@@ -636,7 +636,6 @@ main {
 
 				label {
 					display: block;
-					margin-left: 39px;
 
 					color: #000000;
 					font-family: 'OpenSans';
@@ -645,6 +644,7 @@ main {
 					line-height: 40px;
 
 					cursor: pointer;
+					margin-left: 39px;
 				}
 
 				label:first-of-type {
@@ -756,10 +756,79 @@ main {
 
 				label {
 					display: block;
+					margin-left: 0px;
+					position: relative;
+					margin-top: 5px;
+					cursor: pointer;
+				}
+
+				label:nth-of-type(2) {
+					margin-top: -18px;
+				}
+
+				label:before {
+					content: "";
+					display: block;
+					position: absolute;
+					
+					left: 0px;
+					width: 19px;
+					height: 19px;
+					border: 2px solid #c6c6c6;
+					background-color: rgba(255, 255, 255, 0);
+					border-radius: 50%;
+					
+				}
+
+				label:first-of-type {
+					top: 24px;
+				}
+
+				label:nth-of-type(2) {
+					top: 51px;
+				}
+
+				/*input[type="radio"] + span:before  {
+					content: "";
+					display: none;
+				}*/
+
+				input[type="radio"]:checked + span:before  {
+					content: "";
+					display: block;
+					position: absolute;
+
+					left: 7px;
+					z-index: 1;
+					
+					width: 5px;
+					height: 5px;
+					border: 2px solid #000000;
+					background-color: rgba(255, 255, 255, 0);
+					border-radius: 50%;
+				}
+
+				label:nth-of-type(1) input[type="radio"]:checked + span:before  {
+					top: 7px;
+				}
+
+				label:nth-of-type(2) input[type="radio"]:checked + span:before  {
+					top: 7px;
 				}
 
 				input[type="radio"] {
-					
+					display: none;
+				}
+
+				span {
+					color: #000000;
+					font-family: 'OpenSans';
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 40px;
+					display: inline-block;
+					margin-top: -9px;
+					margin-left: 39px;
 				}
 
 			}
@@ -770,22 +839,23 @@ main {
 				font-size: 18px;
 				font-weight: 700;
 				text-transform: uppercase;
-				background-color: inherit;
-				border: none;
-				margin-top: 98px;
-				margin-left: 35px;
-				letter-spacing: 3.4px;;
+				margin-top: 89px;
+				margin-left: 34px;
+				letter-spacing: 3.4px;
+				z-index: 100;border:none;
+				background: 0 0;
 			}
 
-			button:before {
-				content: "";
-				display: block;
+			button::after {
+				content: '';
 				height: 8px;
 				background-color: #f0c52e;
 				position: absolute;
-				top: 593px;
+				top: 594px;
 				left: 0px;
 				width: 200px;
+				z-index: 10;
+				display: block;
 			}
 		}
 	}

@@ -599,8 +599,8 @@ main {
 		}
 
 		form {
-			margin-top: 82px;
-			margin-left: 199px;
+			margin-top: 83px;
+			margin-left: 197px;
 			position: relative;
 
 			h3 {
@@ -626,13 +626,93 @@ main {
 			.price {
 				position: relative;
 
+				.range-filter {
+					width: 227px;
+
+					.range-controls {
+						position: relative;
+					  height: 10px;
+					  padding-top: 37px;
+					  padding-right: 20px;
+					  border-radius: 5px;
+					  background: #f1f1f1;
+
+						.scale {
+							width: 200px;
+  						background-color: #dbdbdb;
+
+							.bar {
+							  width: 52%;
+							  height: 2px;
+							  margin-left: 5%;
+							  background: #91c92f;
+							}
+						}
+
+						.toggle {
+						  position: absolute;
+						  top: 31px;
+						  left: 0px;
+						  width: 10px;
+						  height: 10px;
+						  cursor: pointer;
+						  border: 2px solid #000000;
+						  border-radius: 50%;
+						  box-shadow: 0 2px 1px 0 #cfcfcf;
+						  background: inherit;
+						}
+
+						.toggle-min {
+  						left: -1px;
+						}
+
+						.toggle-max {
+							left: 111px;
+						}
+					}
+
+					.price-controls {
+						font-size: 0;
+
+						label {
+							display: inline-block;
+							color: #000000;
+							font-family: 'Gilroyextralight';
+							font-size: 14px;
+							font-weight: 300;
+							line-height: 22px;
+						  opacity: .2;
+						}
+
+						.min-price {
+
+						}
+
+						.max-price {
+							text-align: right;
+						}
+
+						input {
+							color: #000000;
+							font-family: 'Gilroyextralight';
+							font-size: 14px;
+							font-weight: 300;
+							line-height: 22px;
+
+
+						  width: 71px;
+
+
+						  background-color: inherit;
+							border: none;
+						}
+					}
+				}
 			}
 
 			.color {
 				position: relative;
-
-				margin-top: 118px;
-				
+				margin-top: 47px;
 
 				label {
 					display: block;

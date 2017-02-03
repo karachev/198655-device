@@ -943,8 +943,9 @@ main {
 				margin-top: 89px;
 				margin-left: 34px;
 				letter-spacing: 3.4px;
-				z-index: 100;border:none;
+				z-index: 20;border:none;
 				background: 0 0;
+				position: relative;
 			}
 
 			button:before {
@@ -952,8 +953,8 @@ main {
 				height: 8px;
 				background-color: #f0c52e;
 				position: absolute;
-				top: 594px;
-				left: 0px;
+				top: 8px;
+				left: -33px;
 				width: 200px;
 				z-index: 1;
 				display: block;
@@ -1533,8 +1534,66 @@ footer {
     		url('../fonts/opensanslight.woff') format('woff');
 }
 
-.slides {
+.slides:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 45px;
+	width: 100px;
+	height: 7px;
+	background: #ffffff;
+	right: 400px;
+}
 
+.slide:first-of-type:after {
+	content: "01";
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: -16px;
+
+	color: #ffffff;
+	font-family: 'Gilroyextrabold';
+	font-size: 179px;
+	font-weight: 700;
+	line-height: 179px;
+	letter-spacing: 5px;
+
+	z-index: 1;
+}
+
+.slide:nth-of-type(2):after {
+	content: "02";
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: -16px;
+
+	color: #ffffff;
+	font-family: 'Gilroyextrabold';
+	font-size: 179px;
+	font-weight: 700;
+	line-height: 179px;
+	letter-spacing: 5px;
+
+	z-index: 1;
+}
+
+.slide:nth-of-type(3):after {
+	content: "03";
+	display: block;
+	position: absolute;
+	top: -7px;
+	right: -16px;
+
+	color: #ffffff;
+	font-family: 'Gilroyextrabold';
+	font-size: 179px;
+	font-weight: 700;
+	line-height: 179px;
+	letter-spacing: 5px;
+
+	z-index: 1;
 }
 
 .slider{
@@ -1552,8 +1611,8 @@ footer {
 }
 .slider-controls{
     position:absolute;
-    bottom:95px;
-    left:50%;
+    bottom:140px;
+    right: -38px;
     width:200px;
     height:10px;
     margin-left:-100px;
@@ -1562,15 +1621,26 @@ footer {
 }
 .slider-controls label{
     display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
-    background:white;
-    border:3px solid white;
+    margin:0 9px;
     vertical-align:top;
     border-radius:50%;
     cursor:pointer;
+
+    width: 4px;
+		height: 4px;
+		border: 3px solid #000000;
+		background-color: #ffffff;
+		opacity: 0.3;
 }
+
+.slider-controls label:hover{
+    opacity: 0.4;
+}
+
+.slider-controls label:active{
+    opacity: 1;
+}
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
@@ -1581,13 +1651,13 @@ footer {
     top:0;
     left:0;
     width:100%;
-    height:100%;
     overflow:hidden;
 }
 .slide-text{
     float:right;
     margin-top:87px;
     position:relative;
+    width:504px;
 
     p {
     	color: #464646;
@@ -1637,6 +1707,8 @@ footer {
 	font-size: 47px;
 	font-weight: 700;
   line-height: 56px;
+  z-index: 2;
+  position: relative;
 }
 .slide .btn{
     display:block;
@@ -1689,12 +1761,12 @@ footer {
 .slide:nth-child(2){
     background-image:url(../img/slider-2.png);
     background-repeat:no-repeat;
-    background-position:0 10px;
+    background-position:56px 20px;
 }
 .slide:nth-child(3){
     background-image:url(../img/slider-3.png);
     background-repeat:no-repeat;
-    background-position:0 10px;
+    background-position:-29px 73px;
 }
 .slide{
     display:none;

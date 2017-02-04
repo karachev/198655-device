@@ -609,8 +609,11 @@ main {
     width: 1440px;
     height: 288px;
     margin: 0 auto;
+    background-color: #e6e6e6;
+    margin-top: 194px;
 
     input[type=radio] {
+    	display: none;
     }
 
     .service-controls {
@@ -618,10 +621,45 @@ main {
 			width: 280px;
 			margin: ;
 	    text-align:center;
+			margin-top: -11px;
+			margin-left: 86px;
 
 	    label {
+	    	position: relative;
 	    	display: block;
 	    	cursor: pointer;
+
+	    	color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+	    	letter-spacing: 3.7px;
+	    	margin-bottom: 42px;
+	    	z-index: 10;
+	    }
+
+	    label:before {
+	    	content: "";
+	    	display: block;
+	    	position: absolute;
+	    	top: 7px;
+	    	left: 55px;
+	    	width: 160px;
+				height: 8px;
+				background-color: #f0c52e;
+				z-index: -10;
+	    }
+
+	    label:after {
+	    	content: "";
+	    	display: block;
+	    	position: absolute;
+	    	top: -89px;
+	    	left: 332px;
+	    	width: 7px;
+				height: 190px;
+				background-color: #000000;
 	    }
     }
 
@@ -633,43 +671,69 @@ main {
     		width: 460px;
 
     		h3 {
-
+					color: #000000;
+					font-family: 'Gilroyextrabold';
+					font-size: 47px;
+					font-weight: 700;
     		}
 
     		p {
-
+					width: 426px;
+					color: #464646;
+					font-family: 'OpenSans';
+					font-size: 15px;
+					font-weight: 300;
+					line-height: 30px;
     		}
     	}
     }
 
-    .service-item:nth-child(1){
+    .service-item-1 {
 		  background-image: url('../img/delivery.png');
 		  background-repeat: no-repeat;
 		  background-position: 0px 0px;
 		}
-		.service-item:nth-child(2){
+		.service-item-2 {
 		  background-image: url('../img/warranty.png');
 		  background-repeat: no-repeat;
 		  background-position: 0px 0px;
 		}
-		.service-item:nth-child(3){
+		.service-item-3 {
 		  background-image:url('../img/credit.png');
 		  background-repeat: no-repeat;
 		  background-position: 0px 0px;
 		}
 
 		.service-item {
-			/*display: none;*/
+			display: none;
 		}
 
-		#service-btn-1:checked ~ .service-item:nth-of-type(1) {
+		#service-btn-1:checked ~ .service-item-1,
+		#service-btn-2:checked ~ .service-item-2,
+		#service-btn-3:checked ~ .service-item-3
+		{
 		  display: block;
 		}
-		#service-btn-2:checked ~ .service-item:nth-child(2) {
-		  display: block;
+
+		#service-btn-1:checked ~ .service-controls label:first-of-type,
+		#service-btn-2:checked ~ .service-controls label:nth-of-type(2),
+		#service-btn-3:checked ~ .service-controls label:nth-of-type(3)
+		{
+			color: #f7e184;
+			position: relative;
+			z-index: 10;
 		}
-		#service-btn-3:checked ~ .service-item:nth-child(3) {
-		  display: block;
+
+		#service-btn-1:checked ~ .service-controls label:first-of-type:before,
+		#service-btn-2:checked ~ .service-controls label:nth-of-type(2):before,
+		#service-btn-3:checked ~ .service-controls label:nth-of-type(3):before
+		{
+
+		  width: 278px;
+			height: 40px;
+			background-color: #000000;
+			top: -8px;
+			z-index: -10;
 		}
 	}
 

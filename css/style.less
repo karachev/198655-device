@@ -141,7 +141,7 @@ header {
 		width: 600px;
 
 		.user-block {
-			/*float: right;*/
+
 			ul {
 				margin-right: 37px;
 				padding: 0;
@@ -150,7 +150,7 @@ header {
 				li {
 					display: inline-block;
 					position: relative;
-					margin-left: 59px;
+					margin-left: 0px;
 					a {
 						color: #000000;
 						font-family: 'OpenSans';
@@ -200,10 +200,23 @@ header {
 					}
 				}
 
-				li:first-child {
-					margin-right: 173px;
-					margin-left: 0;
+				li:last-child {
+					margin-left: 58px;
 				}
+
+				.exit-icon {
+					margin-left: 10px;
+					margin-right: 78px;
+
+					opacity: 0.3;
+				}
+
+			}
+		}
+
+		.user-block-index {
+			li:first-child {
+				margin-right: 227px;
 			}
 		}
 
@@ -749,7 +762,6 @@ main {
 		#service-btn-2:checked ~ .service-controls label:nth-of-type(2):before,
 		#service-btn-3:checked ~ .service-controls label:nth-of-type(3):before
 		{
-
 		  width: 280px;
 			height: 40px;
 			background-color: #000000;
@@ -1927,6 +1939,11 @@ footer {
 	display: table;
 
 	clear: both;
+}
+
+
+header .header-right .user-block ul li:nth-child(2) {
+	margin-left: 4px;
 }
 
 @font-face {

@@ -604,6 +604,75 @@ main {
 		}
 	}
 
+	.service {
+		position: relative;
+    width: 1440px;
+    height: 288px;
+    margin: 0 auto;
+
+    input[type=radio] {
+    }
+
+    .service-controls {
+			float: left;
+			width: 280px;
+			margin: ;
+	    text-align:center;
+
+	    label {
+	    	display: block;
+	    	cursor: pointer;
+	    }
+    }
+
+    .service-item {
+    	float: right;
+    	width: 700px;
+
+    	.service-text {
+    		width: 460px;
+
+    		h3 {
+
+    		}
+
+    		p {
+
+    		}
+    	}
+    }
+
+    .service-item:nth-child(1){
+		  background-image: url('../img/delivery.png');
+		  background-repeat: no-repeat;
+		  background-position: 0px 0px;
+		}
+		.service-item:nth-child(2){
+		  background-image: url('../img/warranty.png');
+		  background-repeat: no-repeat;
+		  background-position: 0px 0px;
+		}
+		.service-item:nth-child(3){
+		  background-image:url('../img/credit.png');
+		  background-repeat: no-repeat;
+		  background-position: 0px 0px;
+		}
+
+		.service-item {
+			/*display: none;*/
+		}
+
+		#service-btn-1:checked ~ .service-item:nth-of-type(1) {
+		  display: block;
+		}
+		#service-btn-2:checked ~ .service-item:nth-child(2) {
+		  display: block;
+		}
+		#service-btn-3:checked ~ .service-item:nth-child(3) {
+		  display: block;
+		}
+	}
+
 	.partners {
 		margin-bottom: 93px;
 		ul {

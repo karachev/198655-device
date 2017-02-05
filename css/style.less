@@ -64,6 +64,19 @@ header {
 					padding-top: -8px;
 				}
 
+				input:hover {
+					opacity: 0.6;
+					color: #000000;
+				}
+
+				input:focus {
+					opacity: 1;
+				}
+
+				input[type=submit] {
+					display: none;
+				}
+
 				label:before {
 					content: "";
 					width: 16px;
@@ -73,6 +86,41 @@ header {
 					display: inline-block;
 					top: 12px;
 					left: 0px;
+				}
+
+				label input[type=text]:focus ~ input[type=submit] {
+					position: relative;
+					display: inline-block;
+					border: 2px solid #000000;
+					opacity: 1;
+					margin-left: 134px;
+					margin-top: -7px;
+					padding: 6px 18px 4px 18px;
+				}
+
+				label input[type=text]:focus ~ input[type=submit]:hover {
+					color: #ffffff;
+					background-color: #000000;
+				}
+
+				label input[type=text]:focus ~ input[type=submit]:active {
+					color: #484848;
+					background-color: #000000;
+				}
+
+				.span-input {
+					font-size: 0px;
+				}
+
+				label input[type=text]:focus ~ .span-input:before {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 41px;
+					left: -5px;
+					width: 441px;
+					height: 2px;
+					background-color: #000000;
 				}
 			}
 		}

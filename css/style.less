@@ -1391,10 +1391,9 @@ main {
 					margin-top: -9px;
 					margin-left: 39px;
 				}
-
 			}
 
-			button {
+			input[type=submit] {
 				color: #000000;
 				font-family: 'Gilroyextrabold';
 				font-size: 18px;
@@ -1403,22 +1402,44 @@ main {
 				margin-top: 89px;
 				margin-left: 34px;
 				letter-spacing: 3.4px;
-				z-index: 20;border:none;
+				z-index: 20;
 				background: 0 0;
+				position: relative;
+				border: none;
+				cursor: pointer;
+				outline: none;
+			}
+
+			.span-input {
+				font-size: 0px;
 				position: relative;
 			}
 
-			button:before {
+			input[type=submit] ~ span:before {
 				content: '';
+				display: block;
+				position: absolute;
+				top: -10px;
+				width: 200px;
 				height: 8px;
 				background-color: #f0c52e;
-				position: absolute;
-				top: 8px;
-				left: -33px;
-				width: 200px;
 				z-index: 1;
-				display: block;
+			}
 
+			input[type=submit]:hover ~ span:before {
+				top: -25px;
+				height: 40px;
+			}
+
+			input[type=submit]:active {
+				opacity: 0.3;
+				border: none;
+
+				span:before {
+					top: -25px;
+					height: 40px;
+					opacity: 0.3;
+				}
 			}
 		}
 	}
@@ -1552,8 +1573,9 @@ main {
 
 			.new {
 				position: absolute;
-				top: -335px;
-				right: -320px;;
+				top: -316px;
+				right: 41px;
+
 				span {
 					opacity: 0.2;
 					color: #000000;

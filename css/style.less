@@ -2040,6 +2040,125 @@ footer {
 	}
 }
 
+.write-us {
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+	background: #ffffff;
+
+	.write-us-close {
+		width: 55px;
+		height: 54px;
+		opacity: 0.5;
+		border-radius: 50%;
+		border: none;
+		outline: none;
+		background: #f0c52e url(../img/menu-close.png) center no-repeat;
+		margin-left: 883px;
+		margin-top: 21px;
+	}
+
+	.wrapper {
+		width: 760px;
+		margin: 0 auto;
+
+		form {
+			position: relative;
+			margin-top: 17px;
+			padding-bottom: 87px;
+
+			label {
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 18px;
+				display: inline-block;
+
+				input,
+				textarea {
+					display: block;
+					margin-top: 10px;
+					opacity: 0.4;
+					color: #464646;
+					font-family: 'OpenSans';
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					border: none;
+					background-color: #e5e5e5;
+				}
+
+				textarea {
+					width: 740px;
+					padding: 15px 0 15px 20px;
+				}
+			}
+
+			label[for = email] {
+				margin-left: 35px;
+			}
+
+			label[for = name],
+			label[for = email] {
+				width: 360px;
+
+				input {
+					width: 341px;
+					padding: 16px 0px 16px 19px;
+				}
+			}
+
+			label[for = letter] {
+				margin-top: 36px;
+			}
+
+			input[type = submit] {
+				display: block;
+				margin-top: 50px;
+				color: #000000;
+				font-family: 'Gilroyextrabold';
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				background-color: inherit;
+				border: none;
+				outline: none;
+				margin-left: 29px;
+				letter-spacing: 3.6px;
+				position: relative;
+				z-index: 2;
+			}
+
+			input[type=submit] ~ span:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 355px;
+				width: 200px;
+				height: 8px;
+				background-color: #f0c52e;
+				z-index: 1;	
+			}
+
+			input[type=submit]:hover ~ span:before {
+				top: 339px;
+				height: 40px;
+			}
+
+			input[type=submit]:active {
+				opacity: 0.3;
+				border: none;
+
+				span:before {
+					top: -25px;
+					height: 40px;
+					opacity: 0.3;
+				}
+			}
+		}
+	}
+}
 
 .clearfix:after {
 	content: "";
@@ -2075,4 +2194,8 @@ header .header-right .user-block ul li:nth-child(2) {
 	src: local('OpenSans'),
      		url('../fonts/opensans.woff2') format('woff2'),
     		url('../fonts/opensanslight.woff') format('woff');
+}
+
+
+input#send {
 }

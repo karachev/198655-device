@@ -928,7 +928,8 @@ main {
 			position: relative;
 		}
 
-		a {
+		a,
+		.button-write-us {
 			color: #000000;
 			font-family: 'Gilroyextrabold';
 			font-size: 18px;
@@ -939,9 +940,14 @@ main {
 			margin-left: 24px;
 			letter-spacing: 3.6px;
 			text-decoration: none;
+			background: inherit;
+			border: none;
+			outline: none;
+			cursor: pointer;
 		}
 
-		a:before {
+		a:before,
+		.button-write-us:before{
 			content: "";
 			display: block;
 			height: 8px;
@@ -954,12 +960,15 @@ main {
 		}
 
 		a:hover:before,
-		a:active:before {
+		a:active:before,
+		.button-write-us:hover:before,
+		.button-write-us:active:before, {
 			top: 39px;
 			height: 40px;
 		}
 
-		a:active {
+		a:active,
+		.button-write-us:active {
 			opacity: 0.3;
 		}
 
@@ -999,7 +1008,7 @@ main {
 				margin-bottom: 25px;
 			}
 
-			 .about-a_second {
+			 .button-write-us {
 				margin-left: 41px;
 			 }
 		}
@@ -2041,7 +2050,12 @@ footer {
 }
 
 .write-us {
+	display: none;
 	width: 960px;
+	position: absolute;
+	top: 1100px;
+	left: 25%;
+	z-index: 10;
 	margin: 0 auto;
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 	background: #ffffff;
@@ -2056,6 +2070,15 @@ footer {
 		background: #f0c52e url(../img/menu-close.png) center no-repeat;
 		margin-left: 883px;
 		margin-top: 21px;
+	}
+
+	.write-us-close:hover {
+		opacity: 1;
+	}
+
+	.write-us-close:active {
+		opacity: 1;
+		background: #f0c52e url(../img/menu-close-active.png) center no-repeat;
 	}
 
 	.wrapper {
@@ -2079,7 +2102,7 @@ footer {
 				textarea {
 					display: block;
 					margin-top: 10px;
-					opacity: 0.4;
+					opacity: 0.5;
 					color: #464646;
 					font-family: 'OpenSans';
 					font-size: 14px;
@@ -2087,11 +2110,28 @@ footer {
 					line-height: 18px;
 					border: none;
 					background-color: #e5e5e5;
+					outline: none;
+				}
+
+				input:hover,
+				textarea:hover {
+					opacity: 0.8;
+				}
+
+				input:active,
+				textarea:active {
+					border: 3px solid #cbcbcb;
+					background-color: #ffffff;
+					opacity: 0.5;
 				}
 
 				textarea {
 					width: 740px;
 					padding: 15px 0 15px 20px;
+				}
+
+				textarea:active {
+					padding: 12px 0px 12px 17px;
 				}
 			}
 
@@ -2106,6 +2146,10 @@ footer {
 				input {
 					width: 341px;
 					padding: 16px 0px 16px 19px;
+				}
+
+				input:active {
+					padding: 13px 0px 13px 16px;
 				}
 			}
 
@@ -2160,6 +2204,10 @@ footer {
 	}
 }
 
+.write-us-show {
+	display: block;
+}
+
 .clearfix:after {
 	content: "";
 
@@ -2194,8 +2242,4 @@ header .header-right .user-block ul li:nth-child(2) {
 	src: local('OpenSans'),
      		url('../fonts/opensans.woff2') format('woff2'),
     		url('../fonts/opensanslight.woff') format('woff');
-}
-
-
-input#send {
 }

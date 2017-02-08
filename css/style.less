@@ -2,6 +2,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	width: 1440px;
+	position: relative;
 }
 
 .container {
@@ -86,7 +87,7 @@ header {
 					content: "";
 					width: 16px;
 					height: 16px;
-					background: url(../img/search.png) no-repeat;
+					background: inherit url(../img/search.png) no-repeat;
 					position: absolute;
 					display: inline-block;
 					top: 12px;
@@ -175,7 +176,7 @@ header {
 						left: -26px;
 						width: 13px;
 						height: 12px;
-						background: url(../img/user.png);
+						background: inherit url(../img/user.png);
 					}
 
 					.compare-icon:after {
@@ -183,7 +184,7 @@ header {
 						left: -19px;
 						width: 10px;
 						height: 10px;
-						background: url(../img/compare.png);
+						background: inherit url(../img/compare.png);
 					}
 
 					.cart-icon:after {
@@ -191,11 +192,12 @@ header {
 						left: -22px;
 						width: 12px;
 						height: 12px;
-						background:url(../img/cart.png);
+						background: inherit url(../img/cart.png);
 					}
 				}
 
-				li:first-child {
+				li:nth-child(2) {
+					margin-left: 4px;
 				}
 
 				li:last-child {
@@ -885,35 +887,35 @@ main {
 				}
 
 				.partners-dji {
-					background: url(../img/logo-1.png);
+					background: inherit url(../img/logo-1.png);
 				}
 
 				.partners-gadgets {
-					background: url(../img/logo-2.png);
+					background: inherit url(../img/logo-2.png);
 				}
 
 				.partners-gopro {
-					background: url(../img/logo-3.png);
+					background: inherit url(../img/logo-3.png);
 				}
 
 				.partners-vive {
-					background: url(../img/logo-4.png);
+					background: inherit url(../img/logo-4.png);
 				}
 
 				.partners-dji:hover {
-					background: url(../img/logo-1-hover.png);
+					background: inherit url(../img/logo-1-hover.png);
 				}
 
 				.partners-gadgets:hover {
-					background: url(../img/logo-2-hover.png);
+					background: inherit url(../img/logo-2-hover.png);
 				}
 
 				.partners-gopro:hover {
-					background: url(../img/logo-3-hover.png);
+					background: inherit url(../img/logo-3-hover.png);
 				}
 
 				.partners-vive:hover {
-					background: url(../img/logo-4-hover.png);
+					background: inherit url(../img/logo-4-hover.png);
 				}
 			}
 		}
@@ -1051,7 +1053,7 @@ main {
 			content: "";
 			display: block;
 			position: absolute;
-			top: 0px;
+			top: -1px;
 			width: 80px;
 			height: 7px;
 			background-color: #000000;
@@ -1120,7 +1122,7 @@ main {
 				width: 4px;
 				height: 7px;
 
-				background: url(../img/nav-arrow.png) no-repeat;
+				background: inherit url(../img/nav-arrow.png) no-repeat;
 			}
 
 			li:nth-child(2):after {
@@ -1134,7 +1136,7 @@ main {
 				width: 4px;
 				height: 7px;
 
-				background: url(../img/nav-arrow.png) no-repeat;
+				background: inherit url(../img/nav-arrow.png) no-repeat;
 			}
 		}
 	}
@@ -1331,7 +1333,7 @@ main {
 
 						width: 12px;
 						height: 7px;
-						background: url(../img/tick.png);
+						background: inherit url(../img/tick.png);
 					}
 				}
 
@@ -1366,7 +1368,7 @@ main {
 
 					width: 12px;
 					height: 7px;
-					background: url(../img/tick.png);
+					background: inherit url(../img/tick.png);
 				}
 
 				label input[type="checkbox"]:checked + span:before  {
@@ -1379,7 +1381,7 @@ main {
 
 					width: 12px;
 					height: 7px;
-					background: url(../img/tick.png);
+					background: inherit url(../img/tick.png);
 				}
 
 				label:first-of-type input[type="checkbox"]:checked + span:before  {
@@ -1613,13 +1615,13 @@ main {
 			}
 
 			.sort-by-up {
-				background: url(../img/sort.png);
+				background: inherit url(../img/sort.png);
 				margin-right: 22px;
 				transform: rotate(180deg);
 			}
 
 			.sort-by-down {
-				background: url(../img/sort.png);
+				background: inherit url(../img/sort.png);
 			}
 		}
 	}
@@ -1929,7 +1931,7 @@ footer {
 				left: 30px;
 				width: 13px;
 				height: 12px;
-				background: url(../img/user-yellow.png);
+				background: inherit url(../img/user-yellow.png);
 			}
 
 			.compare-icon:after {
@@ -1937,7 +1939,7 @@ footer {
 				left: 143px;
 				width: 10px;
 				height: 10px;
-				background: url(../img/compare-yellow.png);
+				background: inherit url(../img/compare-yellow.png);
 			}
 
 			.cart-icon:after {
@@ -1945,7 +1947,7 @@ footer {
 				left: 273px;
 				width: 12px;
 				height: 12px;
-				background:url(../img/cart-yellow.png);
+				background: inherit url(../img/cart-yellow.png);
 			}
 		}
 	}
@@ -2035,16 +2037,16 @@ footer {
 					}
 
 					.fb-icon:after {
-						background: url(../img/facebook.png);
+						background: inherit url(../img/facebook.png);
 					}
 
 					.insta-icon:after {
-						background: url(../img/insta.png);
+						background: inherit url(../img/insta.png);
 					}
 
 					.tw-icon:after {
 						width: 38px;
-						background: url(../img/twitter.png);
+						background: inherit url(../img/twitter.png);
 					}
 				}
 			}
@@ -2086,8 +2088,8 @@ footer {
 	display: none;
 	width: 960px;
 	position: absolute;
-	top: 1058px;
-	left: 472px;
+	top: 1017px;
+	left: 240px;
 	z-index: 10;
 	margin: 0 auto;
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -2247,10 +2249,10 @@ footer {
 	position: absolute;
 	width: 960px;
 	height: 559px;
-	top: 1851px;
-	left: 472px;
+	top: 1811px;
+	left: 240px;
 	z-index: 20;
-	
+
 	.map-close {
 		width: 55px;
 		height: 54px;
@@ -2272,6 +2274,12 @@ footer {
 		opacity: 1;
 		background: #f0c52e url(../img/menu-close-active.png) center no-repeat;
 	}
+
+	iframe {
+		width: 960px;
+		height: 559px;
+		border: 0;
+	}
 }
 
 .show-map-open {
@@ -2290,16 +2298,6 @@ footer {
 	clear: both;
 }
 
-
-main .about-us .contact:after, main .about-us .info:after {
-	top: -1px;
-	width: 80px;
-}
-
-
-header .header-right .user-block ul li:nth-child(2) {
-	margin-left: 4px;
-}
 
 @font-face {
 	font-family: 'Gilroyextrabold';

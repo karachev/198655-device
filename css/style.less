@@ -1006,6 +1006,7 @@ main {
 			img {
 				margin-top: 26px;
 				margin-bottom: 25px;
+				cursor: pointer;
 			}
 
 			 .button-write-us {
@@ -2207,6 +2208,41 @@ footer {
 			}
 		}
 	}
+}
+
+.show-map {
+	display: none;
+	position: absolute;
+	width: 960px;
+	height: 559px;
+	top: 1866px;
+	left: 25%;
+	z-index: 20;
+	.map-close {
+		width: 55px;
+		height: 54px;
+		opacity: 0.5;
+		border-radius: 50%;
+		border: none;
+		outline: none;
+		background: #f0c52e url(../img/menu-close.png) center no-repeat;
+		position: absolute;
+		top: 36px;
+		right: 56px;
+	}
+
+	.map-close:hover {
+		opacity: 1;
+	}
+
+	.map-close:active {
+		opacity: 1;
+		background: #f0c52e url(../img/menu-close-active.png) center no-repeat;
+	}
+}
+
+.show-map-open {
+	display: block;
 }
 
 .write-us-show {

@@ -9,6 +9,11 @@ body {
 	margin: 0 auto;
 }
 
+
+main .popular ul li a .popular-img img {
+	vertical-align: middle;
+}
+
 header {
 	width: 1160px;
 	margin: 0 auto;
@@ -19,7 +24,7 @@ header {
 
 	.header-logo {
 		top: -29px;
-		left: 60px;
+		left: 58px;
 		position: absolute;
 		z-index: 1;
 
@@ -217,7 +222,7 @@ header {
 		.left-half {
 			float: left;
 			position: relative;
-			margin-top: 21px;
+			margin-top: 23px;
 			margin-left: 60px;
 			width: 500px;
 			height: 30px;
@@ -327,7 +332,7 @@ header {
 		.right-half {
 			float: right;
 			.main-navigation-right {
-				margin-top: 22px;
+				margin-top: 23px;
 				margin-right: 95px;
 				ul {
 					padding: 0;
@@ -407,8 +412,8 @@ main {
 
 		.slider-controls {
 			position:absolute;
-	    bottom:140px;
-	    right: -38px;
+	    bottom:138px;
+	    right: -37px;
 	    width:200px;
 	    height:10px;
 	    margin-left:-100px;
@@ -448,7 +453,7 @@ main {
 
 				.slide-text {
 					float:right;
-			    margin-top:87px;
+			    margin-top:89px;
 			    position:relative;
 			    width:504px;
 
@@ -460,6 +465,7 @@ main {
 					  line-height: 56px;
 					  z-index: 2;
 					  position: relative;
+					  letter-spacing: 0.7px;;
 					}
 
 					p {
@@ -486,7 +492,7 @@ main {
 
 				    margin-top:54px;
 				    text-decoration:none;
-						margin-left: 45px;
+						margin-left: 46px;
 						letter-spacing: 3.5px;
 					}
 
@@ -497,7 +503,7 @@ main {
 						background-color: #f0c52e;
 						position: absolute;
 						top: 251px;
-						left: 0px;
+						left: 4px;
 						width: 220px;
 						z-index: -1;
 					}
@@ -517,9 +523,9 @@ main {
 					}
 
 					ul {
-						margin-top: 62px;
+						margin-top: 64px;
 			    	padding: 0;
-			    	margin-left: 3px;
+			    	margin-left: 4px;
 						li {
 							display: inline-block;
 
@@ -553,7 +559,7 @@ main {
 			.slide:nth-child(1){
 			  background-image:url(../img/slider-1.png);
 			  background-repeat:no-repeat;
-			  background-position:29px 8px;
+			  background-position:29px 10px;
 			}
 			.slide:nth-child(2){
 			  background-image:url(../img/slider-2.png);
@@ -573,8 +579,8 @@ main {
 				content: "01";
 				display: block;
 				position: absolute;
-				top: -6px;
-				right: -16px;
+				top: -5px;
+				right: -19px;
 
 				color: #ffffff;
 				font-family: 'Gilroyextrabold';
@@ -625,7 +631,7 @@ main {
 			content: "";
 			display: block;
 			position: absolute;
-			top: 45px;
+			top: 47px;
 			width: 100px;
 			height: 7px;
 			background: #ffffff;
@@ -635,7 +641,7 @@ main {
 
 	.popular {
 		text-align: center;
-		margin-top: 114px;
+		margin-top: 115px;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -653,20 +659,20 @@ main {
 						line-height: 160px;
 
 						img {
-							vertical-align: middle;
 						}
 					}
 
 					span {
 						display: block;
 						text-align: left;
-						width: 128px;
+						width: 135px;
 						height: 36px;
 						color: #000000;
 						font-family: 'Gilroyextrabold';
 						font-size: 18px;
 						font-weight: 700;
-						margin-top: 32px;
+						margin-top: 36px;
+						letter-spacing: 0.5px;;
 					}
 				}
 
@@ -691,6 +697,13 @@ main {
 				}
 			}
 
+			li:nth-of-type(2) {
+				img {
+					vertical-align: bottom;
+					margin-top: 42px;
+				}
+			}
+
 			li:last-child {
 				margin-right: 0;
 			}
@@ -701,7 +714,7 @@ main {
 		position: relative;
     width: 1440px;
     height: 288px;
-    margin: 0 auto;
+    margin: 190px auto 0;
     background-color: #e6e6e6;
     margin-top: 194px;
 
@@ -728,7 +741,7 @@ main {
 				font-weight: 700;
 				text-transform: uppercase;
 	    	letter-spacing: 3.7px;
-	    	margin-bottom: 42px;
+	    	margin-bottom: 45px;
 	    	z-index: 10;
 	    }
 
@@ -777,8 +790,9 @@ main {
 					font-family: 'Gilroyextrabold';
 					font-size: 47px;
 					font-weight: 700;
-					margin: 0;
+					margin: 0px;
 					letter-spacing: 1px;
+					margin-top: 3px;;
     		}
 
     		p {
@@ -788,7 +802,7 @@ main {
 					font-size: 15px;
 					font-weight: 300;
 					line-height: 30px;
-					margin-top: 26px;
+					margin-top: 27px;
     		}
     	}
     }
@@ -797,8 +811,8 @@ main {
     	position: relative;
     	img {
     		position: absolute;
-    		top: -15px;
-    		left: 558px;
+    		top: -14px;
+    		left: 556px;
     	}
 		}
 		.service-item-2 {
@@ -849,12 +863,13 @@ main {
 
 		  z-index: -10;
 
-		  left: 52px;
+		  left: 54px;
 		}
 	}
 
 	.partners {
 		margin-bottom: 93px;
+		margin-top: 81px;;
 		ul {
 			padding: 0px;
 			li {
@@ -912,7 +927,7 @@ main {
 			font-size: 47px;
 			font-weight: 700;
 			margin-bottom: 0;
-			margin-top: 48px;
+			margin-top: 45px;
 		}
 
 		p {
@@ -921,7 +936,7 @@ main {
 			font-size: 15px;
 			font-weight: 300;
 			line-height: 30px;
-			margin-top: 37px;
+			margin-top: 39px;
 		}
 
 		.button-main {
@@ -983,16 +998,32 @@ main {
 			}
 
 			ul {
-				margin-top: 66px;
-				padding-left: 21px;
+				margin-top: 62px;
+				padding-left: 24px;
 				li {
 					padding-left: 13px;
+					list-style: none;
 					span {
+						position: relative;
 						color: #000000;
 						font-family: 'Gilroyextrabold';
 						font-size: 16px;
 						font-weight: 700;
 						line-height: 40px;
+					}
+
+					span:before {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 5px;
+						left: -34px;
+						width: 4px;
+						height: 4px;
+						border: 3px solid #000000;
+						background-color: #ffffff;
+						opacity: 0.3;
+						border-radius: 50%;
 					}
 				}
 			}
@@ -1005,12 +1036,12 @@ main {
 
 			img {
 				margin-top: 26px;
-				margin-bottom: 25px;
+				margin-bottom: 26px;
 				cursor: pointer;
 			}
 
 			 .button-write-us {
-				margin-left: 41px;
+				margin-left: 36px;
 			 }
 		}
 
@@ -1834,12 +1865,12 @@ footer {
 	position: relative;
 
 	background-color: #444444;
-	padding-top: 54px;
-	padding-bottom: 42px;
+	padding-top: 56px;
+	padding-bottom: 47px;
 	.row-1 {
 		.footer-logo {
 			float: left;
-			margin-left: 18px;
+			margin-left: 17px;
 			a {
 				color: #f7e184;
 				font-family: 'Gilroyextrabold';
@@ -1863,8 +1894,8 @@ footer {
 			position: relative;
 
 			float: right;
-			margin-top: 6px;
-			margin-right: 19px;
+			margin-top: 3px;
+			margin-right: 18px;
 			a {
 				padding-left: 57px;
 
@@ -1919,7 +1950,7 @@ footer {
 	}
 
 	.row-2 {
-		margin-top: 20px;
+		margin-top: 19px;
 		span {
 			color: #ffffff;
 			font-family: 'OpenSans';
@@ -1975,7 +2006,7 @@ footer {
 	.row-3 {
 		.footer-social {
 			display: inline-block;
-			margin-top: 43px;
+			margin-top: 45px;
 			margin-left: 488px;
 			ul {
 				li {
@@ -2255,6 +2286,12 @@ footer {
 	display: table;
 
 	clear: both;
+}
+
+
+main .about-us .contact:after, main .about-us .info:after {
+	top: -4px;
+	width: 80px;
 }
 
 

@@ -972,7 +972,7 @@ main {
 			position: relative;
 		}
 
-		a,
+		.about-us-btn,
 		.button-write-us {
 			color: #000000;
 			font-family: 'Gilroyextrabold';
@@ -991,7 +991,7 @@ main {
 			cursor: pointer;
 		}
 
-		a:before,
+		.about-us-btn:before,
 		.button-write-us:before{
 			content: "";
 			display: block;
@@ -1004,15 +1004,15 @@ main {
 			z-index: -1;
 		}
 
-		a:hover:before,
-		a:active:before,
+		.about-us-btn:hover:before,
+		.about-us-btn:active:before,
 		.button-write-us:hover:before,
 		.button-write-us:active:before, {
 			top: 39px;
 			height: 40px;
 		}
 
-		a:active,
+		.about-us-btn:active,
 		.button-write-us:active {
 			opacity: 0.3;
 		}
@@ -1072,6 +1072,11 @@ main {
 
 			 .button-write-us {
 				margin-left: 36px;
+
+				a {
+					text-decoration: none;
+					color: #000000;
+				}
 			 }
 		}
 
@@ -2368,6 +2373,18 @@ footer {
 
 .write-us-show {
 	display: block;
+}
+
+.write-us-page {
+	display: block;
+	top: 0px;
+}
+
+.map-page {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .clearfix:after {

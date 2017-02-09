@@ -2170,7 +2170,8 @@ footer {
 	display: none;
 	width: 960px;
 	position: absolute;
-	top: 1017px;
+	/*top: 1017px;*/
+	top: 1617px;
 	left: 240px;
 	z-index: 10;
 	margin: 0 auto;
@@ -2417,6 +2418,24 @@ footer {
 	src: local('OpenSans'),
      		url('../fonts/opensans.woff2') format('woff2'),
     		url('../fonts/opensanslight.woff') format('woff');
+}
+
+.write-us,
+.show-map {
+	animation-name: appearance;
+	animation-duration: 0.5s;
+}
+
+@keyframes appearance {
+	from {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	to {
+	  opacity: 1;
+	}
 }
 
 .sprite {

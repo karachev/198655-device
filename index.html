@@ -17,7 +17,7 @@
 						<form action="index.html" method="get">
 							<label>
 								<input type="text" placeholder="Поиск по сайту">
-								<button>Найти</button><span class="span-input"></span>
+							<button>Найти</button><span class="span-input"></span>
 							</label>
 						</form>
 					</div>
@@ -236,15 +236,15 @@
 							<li><span>ЖелДорЭкспедиция</span></li>
 						</ul>
 						<div class="button-main">
-							<a href="#" class="btn">Подробнее о нас</a>
+							<a href="#" class="btn about-us-btn">Подробнее о нас</a>
 						</div>
 					</div>
 					<div class="contact">
 						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-						<img src="img/map.jpg" alt="Maps" width="560" height="222">
+						<a href="map.html"><img class="map-button" src="img/map.jpg" alt="Maps" width="560" height="222"></a>
 						<div class="button-main">
-							<a href="#" class="about-a_second">Напишите нам</a>
+							<button class="button-write-us" type="button"><a href="write-us.html">Напишите нам</a></button>
 						</div>
 					</div>
 				</div>
@@ -292,18 +292,22 @@
 			<div class="wrapper">
 				<form action="index.html" method="post">
 					<label for="name">Ваше имя:
-						<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+						<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
 					</label>
 					<label for="email">Ваш e-mail:
-						<input type="email" id="email" name="email" placeholder="Для отправки ответа">
+						<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
 					</label>
 					<label for="letter">Текст письма:
-						<textarea name="letter" id="letter" placeholder="В свободной форме" cols="30" rows="7"></textarea>
+						<textarea name="letter" id="letter" placeholder="В свободной форме" cols="30" rows="7" required></textarea>
 					</label>
-					<input type="submit" id="send" placeholder="Отправить"><span class="input-span"></span></input>
+					<input type="submit" id="send"><span class="input-span"></span>
 				</form>
 			</div>
 		</div>
-    <script src="js/style.js"></script>
+		<div class="show-map">
+			<button class="map-close" type="button" title="Закрыть"></button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.527429316262506!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1486574620549"></iframe>
+		</div>
+    <script src="js/style-min.js"></script>
   </body>
 </html>

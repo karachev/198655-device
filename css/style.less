@@ -410,9 +410,8 @@ main {
     width:1041px;
     margin-left: auto;
     margin-right: auto;
-
-    min-height:486px;
 		margin-top:-120px;
+		min-height:486px;
 
     #btn-1:checked ~ .slider-controls label[for="btn-1"],
 		#btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -670,17 +669,21 @@ main {
 	.popular {
 		text-align: center;
 		margin-top: 115px;
+		min-height: 232px;
 		ul {
 			margin: 0;
 			padding: 0;
+			min-height: inherit;
 			li {
 				display: inline-block;
 				width: 160px;
 				margin-right: 36px;
 				vertical-align: top;
+				min-height: inherit;
 
 				a {
 					text-decoration: none;
+					min-height: inherit;
 					.popular-img {
 						height: 160px;
 						background-color: #ffe27f;
@@ -700,7 +703,8 @@ main {
 						font-size: 18px;
 						font-weight: 700;
 						margin-top: 36px;
-						letter-spacing: 0.5px;;
+						letter-spacing: 0.5px;
+						min-height: inherit;;
 					}
 				}
 
@@ -741,10 +745,10 @@ main {
 	.service {
 		position: relative;
     width: 1440px;
-    height: 288px;
     margin: 190px auto 0;
     background-color: #e6e6e6;
     margin-top: 194px;
+		min-height: 288px;
 
     input[type=radio] {
     	display: none;
@@ -878,6 +882,7 @@ main {
 			color: #f7e184;
 			position: relative;
 			z-index: 10;
+			min-height: 20px;
 		}
 
 		#service-btn-1:checked ~ .service-controls label:first-of-type:before,
@@ -885,13 +890,13 @@ main {
 		#service-btn-3:checked ~ .service-controls label:nth-of-type(3):before
 		{
 		  width: 280px;
-			height: 40px;
 			background-color: #000000;
 			top: -8px;
 
 		  z-index: -10;
 
 		  left: 54px;
+		  height: 40px;
 		}
 	}
 

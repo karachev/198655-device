@@ -669,7 +669,6 @@ main {
 	.popular {
 		text-align: center;
 		margin-top: 115px;
-		min-height: 232px;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -2257,7 +2256,9 @@ footer {
 				}
 
 				input:active,
-				textarea:active {
+				textarea:active,
+				input:focus,
+				textarea:focus {
 					border: 3px solid #cbcbcb;
 					background-color: #ffffff;
 					opacity: 0.5;
@@ -2268,7 +2269,8 @@ footer {
 					padding: 15px 0 15px 20px;
 				}
 
-				textarea:active {
+				textarea:active,
+				textarea:focus{
 					padding: 12px 0px 12px 17px;
 				}
 			}
@@ -2286,7 +2288,8 @@ footer {
 					padding: 16px 0px 16px 19px;
 				}
 
-				input:active {
+				input:active,
+				input:focus {
 					padding: 13px 0px 13px 16px;
 				}
 			}

@@ -347,6 +347,7 @@ header {
 
 		.left-half:hover {
 			height: 36px;
+
 			.header-bottom {
 				display: block;
 			}
@@ -405,17 +406,17 @@ header {
 main {
 
 	.slider {
-		position:relative;
-    width:1041px;
+		position: relative;
+    width: 1041px;
     margin-left: auto;
     margin-right: auto;
-		margin-top:-120px;
-		min-height:486px;
+		margin-top: -120px;
+		min-height: 486px;
 
     #btn-1:checked ~ .slider-controls label[for="btn-1"],
 		#btn-2:checked ~ .slider-controls label[for="btn-2"],
 		#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-		    background:#c1c1c1;
+		    background: #c1c1c1;
 		}
 
 
@@ -430,27 +431,27 @@ main {
 		}
 
 		input[type=radio] {
-			position:absolute;
-    	opacity:0;
+			position: absolute;
+    	opacity: 0;
 
 		}
 
 		.slider-controls {
-			position:absolute;
-	    bottom:138px;
+			position: absolute;
+	    bottom: 138px;
 	    right: -37px;
-	    width:200px;
-	    height:10px;
-	    margin-left:-100px;
-	    text-align:center;
-	    z-index:1000;
+	    width: 200px;
+	    height: 10px;
+	    margin-left: -100px;
+	    text-align: center;
+	    z-index: 1000;
 
 			label {
-		    display:inline-block;
-		    margin:0 9px;
-		    vertical-align:top;
-		    border-radius:50%;
-		    cursor:pointer;
+		    display: inline-block;
+		    margin: 0 9px;
+		    vertical-align: top;
+		    border-radius: 50%;
+		    cursor: pointer;
 
 		    width: 4px;
 				height: 4px;
@@ -470,17 +471,17 @@ main {
 
 		.slides {
 			.slide {
-				position:absolute;
-		    top:0;
-		    left:0;
-		    width:100%;
-		    overflow:hidden;
+				position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    overflow: hidden;
 
 				.slide-text {
-					float:right;
-			    margin-top:89px;
-			    position:relative;
-			    width:506px;
+					float: right;
+			    margin-top: 89px;
+			    position: relative;
+			    width: 506px;
 
 					.slide-title {
 					  color: #000000;
@@ -504,7 +505,7 @@ main {
 					}
 
 					.btn {
-				    display:block;
+				    display: block;
 				    width: 220px;
 						color: #000000;
 						font-family: 'Gilroyextrabold', 'Arial', sans-serif;
@@ -515,8 +516,8 @@ main {
 						border: none;
 						outline: none;
 
-				    margin-top:54px;
-				    text-decoration:none;
+				    margin-top: 54px;
+				    text-decoration: none;
 						margin-left: 46px;
 						letter-spacing: 3.5px;
 					}
@@ -539,7 +540,8 @@ main {
 						height: 40px;
 					}
 
-					.btn:active:before, .btn:hover:before {
+					.btn:active:before,
+					.btn:hover:before {
 						top: 235px;
 					}
 
@@ -584,24 +586,24 @@ main {
 
 			.slide:nth-child(1){
 				background-color: inherit;
-			  background-image:url(../img/slider-1.png);
-			  background-repeat:no-repeat;
-			  background-position:29px 10px;
+			  background-image: url(../img/slider-1.png);
+			  background-repeat: no-repeat;
+			  background-position: 29px 10px;
 			}
 			.slide:nth-child(2){
 				background-color: inherit;
-			  background-image:url(../img/slider-2.png);
-			  background-repeat:no-repeat;
-			  background-position:56px 22px;
+			  background-image: url(../img/slider-2.png);
+			  background-repeat: no-repeat;
+			  background-position: 56px 22px;
 			}
 			.slide:nth-child(3){
 				background-color: inherit;
-			  background-image:url(../img/slider-3.png);
-			  background-repeat:no-repeat;
-			  background-position:-27px 75px;
+			  background-image: url(../img/slider-3.png);
+			  background-repeat: no-repeat;
+			  background-position: -27px 75px;
 			}
 			.slide{
-			    display:none;
+			    display: none;
 			}
 
 			.slide:first-of-type:after {
@@ -706,7 +708,6 @@ main {
 						font-weight: 700;
 						margin-top: 36px;
 						letter-spacing: 0.5px;
-						min-height: inherit;;
 					}
 				}
 
@@ -759,8 +760,7 @@ main {
     .service-controls {
 			float: left;
 			width: 280px;
-			margin: ;
-	    text-align:center;
+	    text-align: center;
 			margin-top: -15px;
 			margin-left: 86px;
 
@@ -1011,7 +1011,7 @@ main {
 		}
 
 		.about-us-btn:before,
-		.button-write-us:before{
+		.button-write-us:before {
 			content: "";
 			display: block;
 			height: 8px;
@@ -1026,7 +1026,7 @@ main {
 		.about-us-btn:hover:before,
 		.about-us-btn:active:before,
 		.button-write-us:hover:before,
-		.button-write-us:active:before, {
+		.button-write-us:active:before {
 			top: 39px;
 			height: 40px;
 		}
@@ -1312,10 +1312,6 @@ main {
 							font-weight: 300;
 							line-height: 22px;
 						  opacity: .2;
-						}
-
-						.min-price {
-
 						}
 
 						.max-price {
@@ -2292,7 +2288,7 @@ footer {
 				}
 
 				textarea:active,
-				textarea:focus{
+				textarea:focus {
 					padding: 12px 0px 12px 17px;
 				}
 			}

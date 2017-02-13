@@ -98,7 +98,7 @@ header {
     			background-position: -578px -5px;
 				}
 
-				label input[type=text]:focus ~ button {
+				input[type=text]:focus ~ button {
 					position: relative;
 					display: inline-block;
 					border: 2px solid #000000;
@@ -110,12 +110,12 @@ header {
 					vertical-align: middle;
 				}
 
-				label input[type=text]:focus ~ button:hover {
+				input[type=text]:focus ~ button:hover {
 					color: #ffffff;
 					background-color: #000000;
 				}
 
-				label input[type=text]:focus ~ button:active {
+				input[type=text]:focus ~ button:active {
 					color: #484848;
 					background-color: #000000;
 				}
@@ -124,7 +124,7 @@ header {
 					font-size: 0px;
 				}
 
-				label input[type=text]:focus ~ .span-input:before {
+				input[type=text]:focus ~ .span-input:before {
 					content: "";
 					display: block;
 					position: absolute;
@@ -146,12 +146,15 @@ header {
 				padding: 0;
 				margin-top: 0px;
 				margin-left: 26px;
+				width: 500px;
 
 				li {
 					display: inline-block;
 					position: relative;
 					margin-left: 0px;
 					vertical-align: middle;
+					max-width: 150px;
+					word-wrap: break-word;
 
 					a {
 						color: #000000;
@@ -160,6 +163,7 @@ header {
 						font-weight: 300;
 						line-height: 36px;
 						text-decoration: none;
+						word-wrap: break-word;
 					}
 
 					a:hover {
@@ -253,6 +257,8 @@ header {
 				text-transform: uppercase;
 				text-decoration: none;
 				letter-spacing: 3.5px;
+				max-width: 220px;
+				word-wrap: break-word;
 			}
 
 			.navigation_a-top:hover {
@@ -357,6 +363,7 @@ header {
 					li {
 						display: inline-block;
 						vertical-align: middle;
+						max-width: 135px;;
 						a {
 							color: #000000;
 							font-family: 'Gilroyextrabold';
@@ -365,6 +372,7 @@ header {
 							text-transform: uppercase;
 							text-decoration: none;
 							letter-spacing: 3.8px;
+							word-wrap: break-word;
 						}
 
 						a:hover {
@@ -402,9 +410,8 @@ main {
     width:1041px;
     margin-left: auto;
     margin-right: auto;
-
-    min-height:486px;
 		margin-top:-120px;
+		min-height:486px;
 
     #btn-1:checked ~ .slider-controls label[for="btn-1"],
 		#btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -665,14 +672,17 @@ main {
 		ul {
 			margin: 0;
 			padding: 0;
+			min-height: inherit;
 			li {
 				display: inline-block;
 				width: 160px;
 				margin-right: 36px;
 				vertical-align: top;
+				min-height: inherit;
 
 				a {
 					text-decoration: none;
+					min-height: inherit;
 					.popular-img {
 						height: 160px;
 						background-color: #ffe27f;
@@ -692,7 +702,8 @@ main {
 						font-size: 18px;
 						font-weight: 700;
 						margin-top: 36px;
-						letter-spacing: 0.5px;;
+						letter-spacing: 0.5px;
+						min-height: inherit;;
 					}
 				}
 
@@ -733,10 +744,10 @@ main {
 	.service {
 		position: relative;
     width: 1440px;
-    height: 288px;
     margin: 190px auto 0;
     background-color: #e6e6e6;
     margin-top: 194px;
+		min-height: 288px;
 
     input[type=radio] {
     	display: none;
@@ -870,6 +881,7 @@ main {
 			color: #f7e184;
 			position: relative;
 			z-index: 10;
+			min-height: 20px;
 		}
 
 		#service-btn-1:checked ~ .service-controls label:first-of-type:before,
@@ -877,19 +889,19 @@ main {
 		#service-btn-3:checked ~ .service-controls label:nth-of-type(3):before
 		{
 		  width: 280px;
-			height: 40px;
 			background-color: #000000;
 			top: -8px;
 
 		  z-index: -10;
 
 		  left: 54px;
+		  height: 40px;
 		}
 	}
 
 	.partners {
 		margin-bottom: 93px;
-		margin-top: 78px;
+		margin-top: 91px;
 		ul {
 			padding: 0px;
 			li {
@@ -949,7 +961,7 @@ main {
 
 	.about-us {
 		position: relative;
-		padding-bottom: 91px;
+		padding-bottom: 94px;
 		h2 {
 			color: #000000;
 			font-family: 'Gilroyextrabold';
@@ -2137,6 +2149,7 @@ footer {
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: 467px;
+			margin-top: 45px;;
 
 			a {
 				opacity: 0.7;
@@ -2244,7 +2257,9 @@ footer {
 				}
 
 				input:active,
-				textarea:active {
+				textarea:active,
+				input:focus,
+				textarea:focus {
 					border: 3px solid #cbcbcb;
 					background-color: #ffffff;
 					opacity: 0.5;
@@ -2255,7 +2270,8 @@ footer {
 					padding: 15px 0 15px 20px;
 				}
 
-				textarea:active {
+				textarea:active,
+				textarea:focus{
 					padding: 12px 0px 12px 17px;
 				}
 			}
@@ -2273,7 +2289,8 @@ footer {
 					padding: 16px 0px 16px 19px;
 				}
 
-				input:active {
+				input:active,
+				input:focus {
 					padding: 13px 0px 13px 16px;
 				}
 			}

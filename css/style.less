@@ -288,6 +288,11 @@ header {
         width: 16px;
         height: 2px;
         background-color: #bda862;
+
+        -webkit-transform: rotate(90deg);
+     		-moz-transform: rotate(90deg);
+     		-ms-transform: rotate(90deg);
+     		-o-transform: rotate(90deg);
         transform: rotate(90deg);
       }
 
@@ -1721,6 +1726,11 @@ main {
         background-position: -604px -5px;
         opacity: 0.2;
         margin-right: 22px;
+
+				-webkit-transform: rotate(180deg);
+     		-moz-transform: rotate(180deg);
+     		-ms-transform: rotate(180deg);
+     		-o-transform: rotate(180deg);
         transform: rotate(180deg);
       }
 
@@ -2492,8 +2502,33 @@ footer {
 .write-us,
 .show-map
 {
-  animation-name: appearance;
-  animation-duration: 0.5s;
+	-webkit-animation: appearance 0.5s;
+	-moz-animation: appearance 0.5s;
+	animation: appearance 0.5s;
+}
+
+@-webkit-keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes appearance {

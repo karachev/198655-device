@@ -5,6 +5,10 @@ body {
   position: relative;
 }
 
+_:-moz-tree-row(hover), button ~ span:before {
+  top: 0px;
+}
+
 .container {
   width: 1200px;
   margin: 0px auto;
@@ -1123,7 +1127,7 @@ main {
     }
   }
 
-	/*catalog.html*/
+  /*catalog.html*/
   .main-title-catalog {
     color: #000000;
     font-family: 'Gilroyextrabold', 'Arial', sans-serif;
@@ -2311,38 +2315,31 @@ footer {
         margin-left: 29px;
         letter-spacing: 3.6px;
         position: relative;
-        z-index: 2;
+        z-index: 20;
       }
 
-      span {
-      	position: relative;
-      }
-
-      button ~ span:before {
+      button:before {
         content: '';
         display: inline-block;
         position: absolute;
         width: 200px;
         height: 8px;
         background-color: #f0c52e;
-        z-index: 1;
-        top: -15px;
+        z-index: -1;
+        top: 7px;
+        left: -29px;;
       }
 
-      button:hover ~ span:before {
-        top: -30px;
+      button:hover:before {
+        top: -10px;
         height: 40px;
       }
 
-      button:active {
+      button:active:before {
         opacity: 0.3;
         border: none;
-
-        span:before {
-          top: -25px;
-          height: 40px;
-          opacity: 0.3;
-        }
+        top: -10px;
+        height: 40px;
       }
     }
   }
@@ -2435,9 +2432,9 @@ footer {
 
 .write-us,
 .show-map {
-	-webkit-animation: appearance 0.5s;
-	-moz-animation: appearance 0.5s;
-	animation: appearance 0.5s;
+  -webkit-animation: appearance 0.5s;
+  -moz-animation: appearance 0.5s;
+  animation: appearance 0.5s;
 }
 
 @-webkit-keyframes appearance {

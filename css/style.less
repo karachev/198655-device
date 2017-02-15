@@ -590,21 +590,21 @@ main {
         background-repeat: no-repeat;
         background-position: 29px 10px;
       }
-      
+
       .slide:nth-child(2){
         background-color: inherit;
         background-image: url(../img/slider-2.png);
         background-repeat: no-repeat;
         background-position: 56px 22px;
       }
-      
+
       .slide:nth-child(3){
         background-color: inherit;
         background-image: url(../img/slider-3.png);
         background-repeat: no-repeat;
         background-position: -27px 75px;
       }
-      
+
       .slide{
         display: none;
       }
@@ -2297,7 +2297,7 @@ footer {
         margin-top: 36px;
       }
 
-      input[type = submit] {
+      button {
         display: block;
         margin-top: 50px;
         color: #000000;
@@ -2314,23 +2314,27 @@ footer {
         z-index: 2;
       }
 
-      input[type=submit] ~ span:before {
+      span {
+      	position: relative;
+      }
+
+      button ~ span:before {
         content: '';
         display: block;
         position: absolute;
-        top: 355px;
+        top: -15px;
         width: 200px;
         height: 8px;
         background-color: #f0c52e;
         z-index: 1;
       }
 
-      input[type=submit]:hover ~ span:before {
-        top: 339px;
+      button:hover ~ span:before {
+        top: -30px;
         height: 40px;
       }
 
-      input[type=submit]:active {
+      button:active {
         opacity: 0.3;
         border: none;
 
